@@ -2,7 +2,7 @@
 CC=gcc
 CFLAGS=-c -Wall -pedantic -Werror
 LDFLAGS=
-SOURCES=main.c
+SOURCES=main.c 
 OBJECTS=$(SOURCES:.c=.o)
 EXECUTABLE=rcc.out
 
@@ -12,6 +12,6 @@ $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 	rm ./*.o
 
-.cpp.o:
+.c.o:
 	$(CC) $(CFLAGS) $< -o $@
 
