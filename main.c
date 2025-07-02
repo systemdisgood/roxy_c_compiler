@@ -15,7 +15,7 @@ void set_rcc_args(int* pargc, char** pargv[])
     }
 }
 
-void free_rcc_args()
+void free_rcc_args(void)
 {
 	for(unsigned args_counter = 0; args_counter < rcc_args.args_quantity; ++args_counter)
     {
