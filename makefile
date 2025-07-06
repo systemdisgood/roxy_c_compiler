@@ -2,7 +2,7 @@
 CC=gcc
 CFLAGS=-c -Wall -pedantic -Werror
 LDFLAGS=
-SOURCES=main.c 
+SOURCES=main.c args.c asm.c 
 OBJECTS=$(SOURCES:.c=.o)
 EXECUTABLE=rcc.out
 
