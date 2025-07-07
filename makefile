@@ -1,6 +1,6 @@
 #CC=clang
 CC=gcc
-CFLAGS=-c -Wall -pedantic -Werror
+CFLAGS=-c -Wall -pedantic -Werror -std=c99
 LDFLAGS=
 SOURCES=main.c args.c asm.c 
 OBJECTS=$(SOURCES:.c=.o)
