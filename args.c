@@ -1,6 +1,7 @@
 #include "args.h"
 
 args_struct rcc_args;
+args_struct* prcc_args = &rcc_args;
 
 void set_rcc_args(int* pargc, char** pargv[])
 {
